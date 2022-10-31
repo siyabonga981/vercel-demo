@@ -13,7 +13,7 @@ const db = require("./db"); // Import Database Connection
 
 let PORT = process.env.PORT || 5000; // Set port for app to listen on
 
-app.use(cors({ origin: 'http://localhost:3000', credentials: true, methods: 'GET,PUT,POST,OPTIONS,DELETE', allowedHeaders: 'Content-Type,Authorization,Access-Control-Allow-Credentials' })); // Use CORS middleware
+app.use(cors({ origin: '*', credentials: true, methods: 'GET,PUT,POST,OPTIONS,DELETE', allowedHeaders: 'Content-Type,Authorization,Access-Control-Allow-Credentials' })); // Use CORS middleware
 
 app.use(cookieSession({ name: "session", keys: ["melody"], maxAge: 24 * 60 * 60 * 100 })); // Use Cookie Session middleware
 
