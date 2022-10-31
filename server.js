@@ -9,7 +9,8 @@ const leaveController = require("./controllers/leaveController"); // import Leav
 
 const db = require("./db"); // Import Database Connection
 
-import path from 'path';
+// const path = require('path');
+
 let PORT = process.env.PORT || 5000; // Set port for app to listen on
 
 app.use(cors({ origin: 'http://localhost:3000', credentials: true, methods: 'GET,PUT,POST,OPTIONS,DELETE', allowedHeaders: 'Content-Type,Authorization,Access-Control-Allow-Credentials' })); // Use CORS middleware
