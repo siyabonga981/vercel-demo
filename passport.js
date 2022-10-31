@@ -1,7 +1,7 @@
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const GitHubStrategy = require('passport-github2').Strategy;
-const GOOGLE_CLIENT_ID = "129854899273-lcqn71i3tjnqi4662ghabo78rntaffsg.apps.googleusercontent.com";
-const GOOGLE_CLIENT_SECRET = "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";
+const GOOGLE_CLIENT_ID = "98841895016-gglhm3d0hppr61glk5subv1b5rt6pcqi.apps.googleusercontent.com";
+const GOOGLE_CLIENT_SECRET = "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";
 const GITHUB_CLIENT_ID = "0385fa03ee38c8096c90";
 const GITHUB_CLIENT_SECRET = "e41b8f756e93ee42d9f6bd0b944ae452c475c8eb";
 const passport = require("passport"); // Import Passport

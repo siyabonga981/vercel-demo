@@ -10,7 +10,7 @@ const CLIENT_URL = 'http://localhost:3000/'
 
 const app = express(); // Hold an instance of the express function
 const cors = require("cors"); // Import CORS
-app.use(cors({ origin: 'http://localhost:3000', credentials: true, methods: 'GET,PUT,POST,OPTIONS', allowedHeaders: 'Content-Type,Authorization,Access-Control-Allow-Credentials' }));
+app.use(cors({ origin: "*", credentials: true, methods: 'GET,PUT,POST,OPTIONS', allowedHeaders: 'Content-Type,Authorization,Access-Control-Allow-Credentials' }));
 // Use CORS middleware
 
 router.get('/login/failed', (req, res) => {
