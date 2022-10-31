@@ -22,14 +22,14 @@ app.use(passport.session()); // Initialize passport session
 
 app.use(express.json()); // Allow app to accept JSON
 
-if (process.env.NODE_ENV === 'production') {
-    // Serve any static files (Our frontend app)
-    app.use(express.static(path.join(__dirname, './frontend/build')));
-    // Handle React routing, return all requests to React app
-    app.get('*', (req, res) => {
-       res.sendFile(path.resolve(__dirname, './frontend', 'build', 'index.html'));
-    });
- }
+// if (process.env.NODE_ENV === 'production') {
+//     // Serve any static files (Our frontend app)
+//     app.use(express.static(path.join(__dirname, './frontend/build')));
+//     // Handle React routing, return all requests to React app
+//     app.get('*', (req, res) => {
+//        res.sendFile(path.resolve(__dirname, './frontend', 'build', 'index.html'));
+//     });
+//  }
 
 app.listen(PORT, () => console.log(`Server is running on port: ${PORT}`)); // Listen on port for route changes
 
